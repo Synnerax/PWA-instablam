@@ -1,0 +1,18 @@
+{
+    "name": "Instablam",
+    "short_name": "instablam",
+    "description": "The New Big Social Media Platform",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "img/instablam-logo-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "background_color": "#0083b0",
+    "theme_color": "#0083b0"
+  }
+  

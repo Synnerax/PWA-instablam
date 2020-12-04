@@ -1,0 +1,275 @@
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --text-color: #fcfcfc;
+    --bg-color: #0083b0;
+    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+video {
+    pointer-events: none;
+    margin-bottom: .75rem;
+  }
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    height: 3.5rem;
+    width: 100%;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: space-evenly;
+
+    position: fixed;
+    bottom: 0;
+}
+
+#video-stream {
+    width: 100%;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.round-button {
+    width:25%;
+  }
+
+.round-button-circle {
+    width: 90px;
+    height: 90px;
+    
+    border-radius: 50%;
+    border: 2px solid black;
+    overflow:hidden;
+          
+    background: #fcfcfc; 
+    box-shadow: 0 0 3px gray;
+}
+
+.download-style {
+
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 20px;
+      
+      
+      /* Darker background on mouse-over */
+}
+.download-style:hover {
+    background-color: RoyalBlue;
+}
+
+.remove-style {
+
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  
+  
+  /* Darker background on mouse-over */
+}
+
+.remove-style:hover {
+    background-color: #b44a42;
+
+}
+
+.button-circle-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 95px;
+    background-color: #fcfcfc;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.photo-button-wrapper {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-library-roll {
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.media-library-roll > img {
+    height: 100%;
+}
+.image-feed {
+    width: 150px;
+    grid-template-rows: auto;
+}
+
+.roll-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-wrapper {
+    display: grid;
+    grid-gap: 2.5px;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+
+.lightbox {
+    
+    position: fixed;
+    z-index: 1;
+    padding-top: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.lightbox-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 85%;
+    max-width: 1200px;
+}
+
+.lightbox-content > img {
+    width: 100%;
+    z-index: 5;
+}
+.lightbox-content  p {
+    color: black;
+}
+
+
+
+
+.flex-wrapper {
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.confirm-content {
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 30%;
+    overflow: auto;
+    background-color: rgb(248, 248, 248);
+    border-radius: 5px;
+    box-shadow: inset -6px -6px 13px 13px #afafaf;
+
+}
+
+.confirm-button {
+    color: black;
+    border-bottom: 1px solid black
+}
+.discard-button {
+    color: black;
+    border-bottom: 1px solid black
+}
+.flex {
+    display: flex;
+}
+
+
+@media only screen and (min-width: 825px) {
+
+    .lightbox-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 85%;
+        max-width: 1200px;
+    }
+
+    .lightbox-content > img {
+        width: 50%;
+        z-index: 5;
+    }
+    .flex-wrapper {
+        width: 100%;
+        color: black;
+        display: flex;
+        justify-content: space-evenly;
+    }
+  }
+
+svg path {
+    stroke: white;
+}
+svg ellipse {
+    stroke: white;
+}
+
+.button-reset-style {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+.transfom-icon {
+    transition: all .5s ease;
+}
+
+.icon-color {
+    stroke: rgb(155, 87, 63);
+}
+
+
+
+.welcome-container {
+    margin-top: 5rem;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0083b0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="apple-touch-icon" href="./img/instablam-logo-512.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./script/script.js"></script>
+    <link rel="shortcut icon" href="./img/instablam-logo-512.png" type="image/x-icon">
+    <title>InstaBLAM</title>
+</head>
+<body>
+    <header>
+        <h1>INSTABLAM</h1>
+        <!-- <button id="permission-button">enable notifcations</button> -->
+        
+    </header>
+    <main>
+        <section class="welcome-container">
+            <section class="welcome-wrapper">
+                <h2>welcome to instablam</h2>
+                <p>
+                    Access the camera by clicking on the camera icon
+                </p>
+                <p>
+                    Access the Media Library by clicking on the library icon
+                </p>
+            </section>
+            <section class="info-wrapper">
+
+                <p>Functions:</p>
+                <p>able to take photos from camera</p>
+                <p>Saving Date of the taken photo</p>
+                <p>Add Geo Location to photos,</p>
+                <p>geocoding to near location if API is active</p>
+            </section>
+        </section>
+
+        
+        <section class="video">
+        <!--
+            <div class="">
+                <button class="start-recording" disabled> Record video </button>
+                <button class="stop-recording" disabled> Stop recording </button>
+                <a href="" download class="downloadLink hidden"> Download </a>
+            </div>
+        -->
+
+            <p class="message error"> <!-- Plats för felmeddelanden --> </p>
+            <video id="video-stream" src="" poster="" autoplay>
+
+            </video>
+            <section class="photo-button-wrapper hidden">
+                <section class="button-circle-wrapper">
+                    <button id="capture-button" class="round-button-circle" disabled></button>
+                </section>
+            </section>
+        </section>
+
+            <article id="media-library" class="hidden">
+                <!--<section id="examples" class="sample-container"></section>
+                <section id="photo-grid"></section> -->
+
+            </article>
+            <section  class="lightbox hidden">
+                <section class="lightbox-content">
+                    <img class="lightbox-image" src="" alt="">
+                    <section class="flex-wrapper">
+                        <p class="date"></p> <p class="location"></p>
+                    </section>
+                    <section class="flex-wrapper">
+                        <a href="" download class="downloadLink download-style hidden"> Download </a>
+                        <p href="" class="remove-photo remove-style">Remove</p>
+                    </section>
+
+                </section>
+                <section class="confirm-content hidden">
+                    <p class="confirm-button">Yes</p>
+                    <p class="discard-button">No</p>
+                </section>
+            </section>
+        
+        
+             <p class="position"></p> 
+
+        <section class="roll-wrapper">
+            <section id="libarary-roll" class="profile media-library-roll">
+                <img src="" alt="Profile picture" class="hidden"/>
+            </section>
+        </section>
+    </main>
+    <a href="" download class="downloadLink download-style hidden"> Download </a>
+    
+    <nav class="menu">
+                <svg class="start-stream" width="93" height="62" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+                    <g>
+                     <title>background</title>
+                     <rect fill="none" id="canvas_background" height="64" width="95" y="-1" x="-1"/>
+                     <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                      <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+                     </g>
+                    </g>
+                    <g>
+                     <title>Layer 1</title>
+                     <rect id="svg_1" class="transfom-icon" height="33.01887" width="45.28302" y="14.69104" x="23.85849" stroke-width="2.5" stroke="#fff" fill="none"/>
+                     <rect id="svg_2" class="transfom-icon" height="0.23585" width="0" y="34.50235" x="61.24056" stroke-width="1.5" stroke="#000" fill="#fff"/>
+                     <rect id="svg_3" class="transfom-icon" height="6.36792" width="16.50943" y="7.85141" x="38.24528" stroke-width="2.5" stroke="#fff" fill="none"/>
+                     <rect id="svg_5" class="transfom-icon" height="6.13207" width="4.00943" y="8.08726" x="25.8632" stroke-opacity="null" stroke-width="1.5" stroke="#fff" fill="none"/>
+                     <ellipse ry="1.76887" class="transfom-icon" rx="2.00472" id="svg_6" cy="20.70519" cx="62.30188" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+                     <ellipse ry="9.08019" class="transfom-icon" rx="10.25943" id="svg_7" cy="32.49764" cx="47.44339" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+                    </g>
+                   </svg>
+                   <!--
+            <button class="stop-stream hidden" disabled> Stop video </button>
+                -->
+            <svg id="media-library-button" width="93" height="62" xmlns="http://www.w3.org/2000/svg">
+                <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+               
+                <g>
+                 <title>background</title>
+                 <rect fill="none" id="canvas_background" height="64" width="95" y="-1" x="-1"/>
+                 <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                  <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+                 </g>
+                </g>
+                <g>
+                 <title>Layer 1</title>
+                 <rect class="transfom-icon" id="svg_2" height="0.23585" width="0" y="34.50235" x="61.24056" stroke-width="1.5" stroke="#000" fill="#fff"/>
+                 <rect class="transfom-icon" rx="1" id="svg_8" height="31.83962" width="41.27358" y="18.22877" x="26.09906" stroke-opacity="null" stroke-width="1.5" stroke="#fff" fill="none"/>
+                 <rect class="transfom-icon" id="svg_9" height="0.23585" width="38.67924" y="15.87028" x="27.39623" stroke-opacity="null" stroke-width="1.5" stroke="#fff" fill="none"/>
+                 <line class="transfom-icon" stroke-linecap="null" stroke-linejoin="null" id="svg_11" y2="13.98349" x2="64.66038" y1="13.98349" x1="28.81132" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#fff" fill="none"/>
+                 <line class="transfom-icon" stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="11.86085" x2="62.65566" y1="11.86085" x1="30.81604" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#fff" fill="none"/>
+                </g>
+               </svg>
+    
+    </nav>
+</body>
+</html>
