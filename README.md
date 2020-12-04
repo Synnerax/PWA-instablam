@@ -3,6 +3,15 @@ Elliot Berggren
 https://nifty-horse.surge.sh/
 
 
+inlämningsuppgift: Instablam (Progressive Web Apps)
+
+Detta är en App som använder sig av kameran för att ta snapshots!
+Varje bild spara samt din plats info (alternativ), och vilken tid bilden togs.
+
+Appen har även möjlighet att skicka en notis till användaren med tagen bild och tid.
+
+Man har samt möjlighet till att blädra igenom till bild bibliotek för att ladda ner eller ta bort bilder
+
 | Webbläsare     | Geolocation  | MediaDevices  | Notification | Offline |Push  |
 | ---------------|:------------:| --------------|--------------|---------|-----:|
 | Desktop Chrome |     Yes      |     Yes       |     Yes      |   Yes   | Yes  |
